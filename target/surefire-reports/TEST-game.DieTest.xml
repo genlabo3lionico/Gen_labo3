@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="game.DieTest" time="0.14" tests="101" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="gopherProxySet" value="false"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/lionelburgbacher/Documents/GEN_LABO/labo_3/fork/Gen_labo3/target/test-classes:/Users/lionelburgbacher/Documents/GEN_LABO/labo_3/fork/Gen_labo3/target/classes:/Users/lionelburgbacher/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.4.0/junit-jupiter-api-5.4.0.jar:/Users/lionelburgbacher/.m2/repository/org/apiguardian/apiguardian-api/1.0.0/apiguardian-api-1.0.0.jar:/Users/lionelburgbacher/.m2/repository/org/opentest4j/opentest4j/1.1.1/opentest4j-1.1.1.jar:/Users/lionelburgbacher/.m2/repository/org/junit/platform/junit-platform-commons/1.4.0/junit-platform-commons-1.4.0.jar:/Users/lionelburgbacher/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.4.0/junit-jupiter-engine-5.4.0.jar:/Users/lionelburgbacher/.m2/repository/org/junit/platform/junit-platform-engine/1.4.0/junit-platform-engine-1.4.0.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value=""/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="user.country" value="CH"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib"/>
+    <property name="sun.java.command" value="/Users/lionelburgbacher/Documents/GEN_LABO/labo_3/fork/Gen_labo3/target/surefire/surefirebooter1851975949815612852.jar /Users/lionelburgbacher/Documents/GEN_LABO/labo_3/fork/Gen_labo3/target/surefire 2019-04-06T20-29-08_677-jvmRun1 surefire5016128479020118977tmp surefire_01804695564006108022tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="surefire.test.class.path" value="/Users/lionelburgbacher/Documents/GEN_LABO/labo_3/fork/Gen_labo3/target/test-classes:/Users/lionelburgbacher/Documents/GEN_LABO/labo_3/fork/Gen_labo3/target/classes:/Users/lionelburgbacher/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.4.0/junit-jupiter-api-5.4.0.jar:/Users/lionelburgbacher/.m2/repository/org/apiguardian/apiguardian-api/1.0.0/apiguardian-api-1.0.0.jar:/Users/lionelburgbacher/.m2/repository/org/opentest4j/opentest4j/1.1.1/opentest4j-1.1.1.jar:/Users/lionelburgbacher/.m2/repository/org/junit/platform/junit-platform-commons/1.4.0/junit-platform-commons-1.4.0.jar:/Users/lionelburgbacher/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.4.0/junit-jupiter-engine-5.4.0.jar:/Users/lionelburgbacher/.m2/repository/org/junit/platform/junit-platform-engine/1.4.0/junit-platform-engine-1.4.0.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/lionelburgbacher"/>
+    <property name="user.language" value="fr"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre"/>
+    <property name="basedir" value="/Users/lionelburgbacher/Documents/GEN_LABO/labo_3/fork/Gen_labo3"/>
+    <property name="file.separator" value="/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="/Users/lionelburgbacher/Documents/GEN_LABO/labo_3/fork/Gen_labo3/target/surefire/surefirebooter1851975949815612852.jar"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/classes"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="1.8.0_144-b01"/>
+    <property name="user.name" value="lionelburgbacher"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="10.14.4"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="/Users/lionelburgbacher/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/var/folders/1k/xsmk6css66q646w3291ny9k00000gn/T/"/>
+    <property name="java.version" value="1.8.0_144"/>
+    <property name="user.dir" value="/Users/lionelburgbacher/Documents/GEN_LABO/labo_3/fork/Gen_labo3"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.library.path" value="/Users/lionelburgbacher/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.144-b01"/>
+    <property name="java.ext.dirs" value="/Users/lionelburgbacher/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+  </properties>
+  <testcase name="itShouldbe0" classname="game.DieTest" time="0.009"/>
+  <testcase name="ItshouldbeBtw1And6[1]" classname="game.DieTest" time="0.001"/>
+  <testcase name="ItshouldbeBtw1And6[2]" classname="game.DieTest" time="0.001"/>
+  <testcase name="ItshouldbeBtw1And6[3]" classname="game.DieTest" time="0.001"/>
+  <testcase name="ItshouldbeBtw1And6[4]" classname="game.DieTest" time="0.001"/>
+  <testcase name="ItshouldbeBtw1And6[5]" classname="game.DieTest" time="0.001"/>
+  <testcase name="ItshouldbeBtw1And6[6]" classname="game.DieTest" time="0"/>
+  <testcase name="ItshouldbeBtw1And6[7]" classname="game.DieTest" time="0"/>
+  <testcase name="ItshouldbeBtw1And6[8]" classname="game.DieTest" time="0"/>
+  <testcase name="ItshouldbeBtw1And6[9]" classname="game.DieTest" time="0.001"/>
+  <testcase name="ItshouldbeBtw1And6[10]" classname="game.DieTest" time="0"/>
+  <testcase name="ItshouldbeBtw1And6[11]" classname="game.DieTest" time="0.001"/>
+  <testcase name="ItshouldbeBtw1And6[12]" classname="game.DieTest" time="0"/>
+  <testcase name="ItshouldbeBtw1And6[13]" classname="game.DieTest" time="0"/>
+  <testcase name="ItshouldbeBtw1And6[14]" classname="game.DieTest" time="0.001"/>
+  <testcase name="ItshouldbeBtw1And6[15]" classname="game.DieTest" time="0.001"/>
+  <testcase name="ItshouldbeBtw1And6[16]" classname="game.DieTest" time="0.001"/>
+  <testcase name="ItshouldbeBtw1And6[17]" classname="game.DieTest" time="0"/>
+  <testcase name="ItshouldbeBtw1And6[18]" classname="game.DieTest" time="0"/>
+  <testcase name="ItshouldbeBtw1And6[19]" classname="game.DieTest" time="0"/>
+  <testcase name="ItshouldbeBtw1And6[20]" classname="game.DieTest" time="0"/>
+  <testcase name="ItshouldbeBtw1And6[21]" classname="game.DieTest" time="0"/>
+  <testcase name="ItshouldbeBtw1And6[22]" classname="game.DieTest" time="0.001"/>
+  <testcase name="ItshouldbeBtw1And6[23]" classname="game.DieTest" time="0.001"/>
+  <testcase name="ItshouldbeBtw1And6[24]" classname="game.DieTest" time="0"/>
+  <testcase name="ItshouldbeBtw1And6[25]" classname="game.DieTest" time="0"/>
+  <testcase name="ItshouldbeBtw1And6[26]" classname="game.DieTest" time="0"/>
+  <testcase name="ItshouldbeBtw1And6[27]" classname="game.DieTest" time="0"/>
+  <testcase name="ItshouldbeBtw1And6[28]" classname="game.DieTest" time="0.001"/>
+  <testcase name="ItshouldbeBtw1And6[29]" classname="game.DieTest" time="0.001"/>
+  <testcase name="ItshouldbeBtw1And6[30]" classname="game.DieTest" time="0.001"/>
+  <testcase name="ItshouldbeBtw1And6[31]" classname="game.DieTest" time="0.001"/>
+  <testcase name="ItshouldbeBtw1And6[32]" classname="game.DieTest" time="0.001"/>
+  <testcase name="ItshouldbeBtw1And6[33]" classname="game.DieTest" time="0.001"/>
+  <testcase name="ItshouldbeBtw1And6[34]" classname="game.DieTest" time="0.001"/>
+  <testcase name="ItshouldbeBtw1And6[35]" classname="game.DieTest" time="0"/>
+  <testcase name="ItshouldbeBtw1And6[36]" classname="game.DieTest" time="0.001"/>
+  <testcase name="ItshouldbeBtw1And6[37]" classname="game.DieTest" time="0"/>
+  <testcase name="ItshouldbeBtw1And6[38]" classname="game.DieTest" time="0.001"/>
+  <testcase name="ItshouldbeBtw1And6[39]" classname="game.DieTest" time="0.001"/>
+  <testcase name="ItshouldbeBtw1And6[40]" classname="game.DieTest" time="0.001"/>
+  <testcase name="ItshouldbeBtw1And6[41]" classname="game.DieTest" time="0.001"/>
+  <testcase name="ItshouldbeBtw1And6[42]" classname="game.DieTest" time="0"/>
+  <testcase name="ItshouldbeBtw1And6[43]" classname="game.DieTest" time="0"/>
+  <testcase name="ItshouldbeBtw1And6[44]" classname="game.DieTest" time="0"/>
+  <testcase name="ItshouldbeBtw1And6[45]" classname="game.DieTest" time="0"/>
+  <testcase name="ItshouldbeBtw1And6[46]" classname="game.DieTest" time="0"/>
+  <testcase name="ItshouldbeBtw1And6[47]" classname="game.DieTest" time="0"/>
+  <testcase name="ItshouldbeBtw1And6[48]" classname="game.DieTest" time="0"/>
+  <testcase name="ItshouldbeBtw1And6[49]" classname="game.DieTest" time="0"/>
+  <testcase name="ItshouldbeBtw1And6[50]" classname="game.DieTest" time="0"/>
+  <testcase name="ItshouldbeBtw1And6[51]" classname="game.DieTest" time="0.001"/>
+  <testcase name="ItshouldbeBtw1And6[52]" classname="game.DieTest" time="0.001"/>
+  <testcase name="ItshouldbeBtw1And6[53]" classname="game.DieTest" time="0"/>
+  <testcase name="ItshouldbeBtw1And6[54]" classname="game.DieTest" time="0"/>
+  <testcase name="ItshouldbeBtw1And6[55]" classname="game.DieTest" time="0"/>
+  <testcase name="ItshouldbeBtw1And6[56]" classname="game.DieTest" time="0"/>
+  <testcase name="ItshouldbeBtw1And6[57]" classname="game.DieTest" time="0"/>
+  <testcase name="ItshouldbeBtw1And6[58]" classname="game.DieTest" time="0"/>
+  <testcase name="ItshouldbeBtw1And6[59]" classname="game.DieTest" time="0"/>
+  <testcase name="ItshouldbeBtw1And6[60]" classname="game.DieTest" time="0"/>
+  <testcase name="ItshouldbeBtw1And6[61]" classname="game.DieTest" time="0.001"/>
+  <testcase name="ItshouldbeBtw1And6[62]" classname="game.DieTest" time="0.001"/>
+  <testcase name="ItshouldbeBtw1And6[63]" classname="game.DieTest" time="0.001"/>
+  <testcase name="ItshouldbeBtw1And6[64]" classname="game.DieTest" time="0"/>
+  <testcase name="ItshouldbeBtw1And6[65]" classname="game.DieTest" time="0"/>
+  <testcase name="ItshouldbeBtw1And6[66]" classname="game.DieTest" time="0"/>
+  <testcase name="ItshouldbeBtw1And6[67]" classname="game.DieTest" time="0.001"/>
+  <testcase name="ItshouldbeBtw1And6[68]" classname="game.DieTest" time="0"/>
+  <testcase name="ItshouldbeBtw1And6[69]" classname="game.DieTest" time="0"/>
+  <testcase name="ItshouldbeBtw1And6[70]" classname="game.DieTest" time="0.001"/>
+  <testcase name="ItshouldbeBtw1And6[71]" classname="game.DieTest" time="0"/>
+  <testcase name="ItshouldbeBtw1And6[72]" classname="game.DieTest" time="0"/>
+  <testcase name="ItshouldbeBtw1And6[73]" classname="game.DieTest" time="0"/>
+  <testcase name="ItshouldbeBtw1And6[74]" classname="game.DieTest" time="0"/>
+  <testcase name="ItshouldbeBtw1And6[75]" classname="game.DieTest" time="0.001"/>
+  <testcase name="ItshouldbeBtw1And6[76]" classname="game.DieTest" time="0.001"/>
+  <testcase name="ItshouldbeBtw1And6[77]" classname="game.DieTest" time="0"/>
+  <testcase name="ItshouldbeBtw1And6[78]" classname="game.DieTest" time="0"/>
+  <testcase name="ItshouldbeBtw1And6[79]" classname="game.DieTest" time="0"/>
+  <testcase name="ItshouldbeBtw1And6[80]" classname="game.DieTest" time="0"/>
+  <testcase name="ItshouldbeBtw1And6[81]" classname="game.DieTest" time="0"/>
+  <testcase name="ItshouldbeBtw1And6[82]" classname="game.DieTest" time="0"/>
+  <testcase name="ItshouldbeBtw1And6[83]" classname="game.DieTest" time="0"/>
+  <testcase name="ItshouldbeBtw1And6[84]" classname="game.DieTest" time="0.001"/>
+  <testcase name="ItshouldbeBtw1And6[85]" classname="game.DieTest" time="0"/>
+  <testcase name="ItshouldbeBtw1And6[86]" classname="game.DieTest" time="0"/>
+  <testcase name="ItshouldbeBtw1And6[87]" classname="game.DieTest" time="0"/>
+  <testcase name="ItshouldbeBtw1And6[88]" classname="game.DieTest" time="0"/>
+  <testcase name="ItshouldbeBtw1And6[89]" classname="game.DieTest" time="0.001"/>
+  <testcase name="ItshouldbeBtw1And6[90]" classname="game.DieTest" time="0.001"/>
+  <testcase name="ItshouldbeBtw1And6[91]" classname="game.DieTest" time="0.001"/>
+  <testcase name="ItshouldbeBtw1And6[92]" classname="game.DieTest" time="0.001"/>
+  <testcase name="ItshouldbeBtw1And6[93]" classname="game.DieTest" time="0"/>
+  <testcase name="ItshouldbeBtw1And6[94]" classname="game.DieTest" time="0"/>
+  <testcase name="ItshouldbeBtw1And6[95]" classname="game.DieTest" time="0"/>
+  <testcase name="ItshouldbeBtw1And6[96]" classname="game.DieTest" time="0"/>
+  <testcase name="ItshouldbeBtw1And6[97]" classname="game.DieTest" time="0.001"/>
+  <testcase name="ItshouldbeBtw1And6[98]" classname="game.DieTest" time="0"/>
+  <testcase name="ItshouldbeBtw1And6[99]" classname="game.DieTest" time="0"/>
+  <testcase name="ItshouldbeBtw1And6[100]" classname="game.DieTest" time="0"/>
+</testsuite>
