@@ -18,17 +18,17 @@ public class MonopolyGame {
 
     public void playGame() {
 
+        while (roundCnt != 20){
+            playRound();
+            roundCnt++;
+        }
 
     }
 
     private void playRound() {
 
-        while (roundCnt != 20){
-
-            for (Player p: players) {
-                p.takeTurn();
-            }
-            roundCnt++;
+        for (Player p: players) {
+            p.takeTurn();
         }
     }
 }

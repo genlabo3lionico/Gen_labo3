@@ -1,21 +1,31 @@
 package player;
 
+import game.Board;
+import game.Die;
+import game.Piece;
+
 public class Player {
 
-    private final String name;
+    static int count = 0;
 
-    public Player (String name) {
+    private String name = "Player" + ++count;
 
-        this.name = name;
+    private Board board;
+    private Die dice;
+    private Piece piece;
+
+    public Player(Board board,Piece piece, Die dice){
+        this.board = board;
+        this.dice = dice;
+        this.piece = piece;
     }
 
-    public String getName() {
+    public void takeTurn(){
+        dice.roll();
+        piece.setLocation(board.getSquare(piece.getLocation(), dice.getFaceValue()));
+    }
 
+    public String getName(){
         return name;
     }
-
-    public void takeTurn() {
-
-    }
-
 }
