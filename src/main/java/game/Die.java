@@ -14,7 +14,7 @@ public class Die {
 
     public void roll(){
 
-        faceValue = random(1,6);
+        faceValue = random(2,12);
     }
 
     public int getFaceValue(){
@@ -24,6 +24,8 @@ public class Die {
 
     private int random(int min, int max){
 
-        return random.nextInt(max)+ min;
+
+        Random random = new Random();
+        return random.nextInt((max-min)+1)+ min;
     }
 }

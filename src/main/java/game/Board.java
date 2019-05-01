@@ -20,5 +20,4 @@ public class Board {
     Square getSquare(Square oldLoc, int fvTot){
         return squares[(oldLoc.getIndex() + fvTot) % NBSQUARES];
     }
-
 }
