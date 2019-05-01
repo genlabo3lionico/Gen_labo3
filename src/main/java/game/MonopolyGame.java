@@ -1,5 +1,6 @@
 package game;
 
+import game.square.*;
 import player.Player;
 
 import java.util.ArrayList;
@@ -11,31 +12,28 @@ public class MonopolyGame {
     private int roundCnt;
     private ArrayList<Player> players;
 
-    public MonopolyGame() {
+    public MonopolyGame(int nbrPlayer) {
+
+        if(nbrPlayer > 8){
+
+            throw new IllegalArgumentException("Too much player");
+        }
 
         roundCnt = 0;
         players = new ArrayList<>();
 
-        //To test if it's correct
-        Board b1 = new Board();
-        Piece p1 = new Piece("Dog", new Square("Go", 0));
-        Die d1 = new Die();
+        Board b = new Board();
+        Die d = new Die();
 
-        Player player1 = new Player(b1, p1, d1);
-        addPlayer(player1);
-
-        Piece p2 = new Piece("Car", new Square("Go", 0));
-        Player player2 = new Player(b1, p2,d1);
-
-        addPlayer(player2);
+        for (int i = 0; i < nbrPlayer ; i++) {
+            Piece p = new Piece( Integer.toString(i), new GoSquare("Go", 0));
+            Player player = new Player(b, p, d, 1500);
+            addPlayer(player);
+        }
     }
 
     public void addPlayer(Player p){
 
-        if(players.size() > 8){
-
-            throw new IllegalArgumentException("Too much players");
-        }
         players.add(p);
     }
 

@@ -1,5 +1,7 @@
 package game;
 
+import game.square.*;
+
 public class Piece {
 
     private final String name;

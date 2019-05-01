@@ -3,6 +3,7 @@ package player;
 import game.Board;
 import game.Die;
 import game.Piece;
+import game.square.*;
 
 public class Player {
 
@@ -14,15 +15,34 @@ public class Player {
     private Die dice;
     private Piece piece;
 
-    public Player(Board board,Piece piece, Die dice){
+    private int money;
+
+    public Player(Board board,Piece piece, Die dice, int money){
         this.board = board;
         this.dice = dice;
         this.piece = piece;
+        this.money = money;
     }
 
     public void takeTurn(){
         dice.roll();
-        piece.setLocation(board.getSquare(piece.getLocation(), dice.getFaceValue()));
+        piece.setLocation(board.getNewSquare(piece.getLocation(), dice.getFaceValue()));
+
+        if(piece.getLocation() instanceof GoSquare){
+            money += 200;
+        }
+        else if(piece.getLocation() instanceof GoToJailSquare){
+            piece.setLocation(board.getSquare(10));
+        }
+        else if(piece.getLocation() instanceof IncomeTaxSquare){
+
+            if(money/10 > 200){
+                money -= money/10;
+            }
+            else{
+                money -= 200;
+            }
+        }
     }
 
     public String getName(){
