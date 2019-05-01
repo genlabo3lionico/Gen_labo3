@@ -11,15 +11,16 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class PlayerTest {
 
+    Board b = new Board();
+    Piece p = new Piece("Dog", new Square("Go", 0));
+    Die d = new Die();
+
+    Player p1 = new Player(b,p,d);
+    Player p2 = new Player(b,p,d);
+
+
     @Test
     public void itShouldbePlayer2(){
-
-        Board b = new Board();
-        Piece p = new Piece("Dog", new Square("Go", 0));
-        Die d = new Die();
-
-        Player p1 = new Player(b,p,d);
-        Player p2 = new Player(b,p,d);
 
         assertTrue(p2.getName().equals("Player2"));
     }

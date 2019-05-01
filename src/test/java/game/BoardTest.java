@@ -9,10 +9,11 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class BoardTest {
 
+    Board b = new Board();
+
     @Test
     public void itShouldbeGO(){
 
-        Board b = new Board();
         assertTrue(b.getStartingSquare().toString().equals("Go"));
     }
 
@@ -23,5 +24,6 @@ public class BoardTest {
         Board b = new Board();
         assertFalse(b.getSquare(b.getStartingSquare(), index).toString() == b.getStartingSquare().toString() );
     }
+
 
 }

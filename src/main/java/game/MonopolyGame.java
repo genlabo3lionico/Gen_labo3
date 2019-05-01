@@ -15,6 +15,15 @@ public class MonopolyGame {
         players = new ArrayList<>();
     }
 
+    public void addPlayer(Player p){
+
+        if(players.size() > 8){
+
+            throw new IllegalArgumentException("Too much players");
+        }
+        players.add(p);
+    }
+
     public void playGame() {
 
         while (roundCnt != 20){
