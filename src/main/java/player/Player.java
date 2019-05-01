@@ -3,9 +3,7 @@ package player;
 import game.Board;
 import game.Die;
 import game.Piece;
-import game.square.GoSquare;
-import game.square.GoToJailSquare;
-import game.square.IncomeTaxSquare;
+import game.square.*;
 
 public class Player {
 
