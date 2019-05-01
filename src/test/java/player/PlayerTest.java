@@ -12,7 +12,7 @@ import static org.junit.jupiter.api.Assertions.*;
 public class PlayerTest {
 
     @Test
-    public void itShouldbe0(){
+    public void itShouldbePlayer2(){
 
         Board b = new Board();
         Piece p = new Piece("Dog", new Square("Go", 0));
