@@ -13,7 +13,6 @@ public class MonopolyGame {
 
         roundCnt = 0;
         players = new ArrayList<>();
-
     }
 
     public void playGame() {

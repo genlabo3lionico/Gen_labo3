@@ -4,7 +4,7 @@ public class Board {
 
     static final int NBSQUARES = 40; //note should be > 0
 
-    Square[] squares;
+    private Square[] squares;
 
     public Board(){
         squares = new Square[NBSQUARES];

@@ -4,8 +4,6 @@ import java.util.Random;
 
 public class Die {
 
-    private Random random = new Random();
-
     private int faceValue;
 
     public Die (){
