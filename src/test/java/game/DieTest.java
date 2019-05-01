@@ -17,12 +17,12 @@ public class DieTest {
     }
 
     @RepeatedTest(100)
-    public void ItshouldbeBtw1And6(){
+    public void ItshouldbeBtw2And12(){
 
         Die die = new Die();
         die.roll();
         int res = die.getFaceValue();
-        assertTrue(res >= 1 && res <= 6);
+        assertTrue(res >= 2 && res <= 12);
     }
 
 }
