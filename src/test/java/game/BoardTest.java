@@ -22,8 +22,6 @@ public class BoardTest {
     public void itShouldBeDifferentName(int index){
 
         Board b = new Board();
-        assertFalse(b.getSquare(b.getStartingSquare(), index).toString() == b.getStartingSquare().toString() );
+        assertFalse(b.getSquare(b.getStartingSquare(), index).toString().equals(b.getStartingSquare().toString()));
     }
-
-
 }

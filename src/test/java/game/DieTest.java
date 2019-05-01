@@ -13,7 +13,6 @@ public class DieTest {
     public void itShouldbe0(){
 
         assertEquals(die.getFaceValue(), 0);
-
     }
 
     @RepeatedTest(100)
