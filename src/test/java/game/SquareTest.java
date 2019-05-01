@@ -12,4 +12,11 @@ public class SquareTest {
 
         assertThrows(IllegalArgumentException.class, () -> new RegularSquare("Prison", 40));
     }
+
+    @Test
+    public void itSchoudBeNotEqualsSquareClass(){
+
+        Board b = new Board();
+        assertNotEquals(b.getSquare(0).getClass(), b.getSquare(1).getClass());
+    }
 }
