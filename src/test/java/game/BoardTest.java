@@ -15,7 +15,7 @@ public class BoardTest {
     @Test
     public void itShouldbeGO(){
 
-        assertTrue(b.getStartingSquare().toString().equals("Go"));
+        assertTrue(b.getStartingSquare().getName().equals("Go"));
     }
 
     @ParameterizedTest
