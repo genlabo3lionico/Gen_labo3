@@ -4,6 +4,8 @@ import java.util.Random;
 
 public class Die {
 
+    private Random random = new Random();
+
     private int faceValue;
 
     public Die (){
@@ -21,6 +23,7 @@ public class Die {
     }
 
     private int random(int min, int max){
+
 
         Random random = new Random();
         return random.nextInt((max-min)+1)+ min;
