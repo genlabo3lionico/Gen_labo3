@@ -18,7 +18,6 @@ public class PlayerTest {
     Player p1 = new Player(b,p,d);
     Player p2 = new Player(b,p,d);
 
-
     @Test
     public void itShouldbePlayer2(){
 
