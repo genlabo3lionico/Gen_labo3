@@ -9,8 +9,7 @@ public abstract class Square {
         return index;
     }
 
-    @Override
-    public String toString(){
+    public String getName(){
         return name;
     }
 }

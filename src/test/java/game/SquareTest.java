@@ -19,4 +19,12 @@ public class SquareTest {
         Board b = new Board();
         assertNotEquals(b.getSquare(0).getClass(), b.getSquare(1).getClass());
     }
+
+    @Test
+    public void ItDontShouldBeTheSameRegularSquare(){
+
+        Board b = new Board();
+
+        assertNotSame(b.getSquare(1), b.getSquare(2));
+    }
 }
