@@ -1,6 +1,6 @@
 package game;
 
-import game.square.Square;
+import game.square.*;
 
 public class Piece {
 
