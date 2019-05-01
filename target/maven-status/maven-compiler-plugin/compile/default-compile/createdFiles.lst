@@ -1,1 +1,11 @@
+Main.class
+game/square/IncomeTaxSquare.class
 game/Die.class
+game/square/Square.class
+game/Board.class
+game/MonopolyGame.class
+game/square/RegularSquare.class
+game/square/GoSquare.class
+player/Player.class
+game/Piece.class
+game/square/GoToJailSquare.class

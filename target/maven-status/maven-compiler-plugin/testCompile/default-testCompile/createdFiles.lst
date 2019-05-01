@@ -1,1 +1,5 @@
+player/PlayerTest.class
+game/BoardTest.class
+game/SquareTest.class
+game/MonopolyGameTest.class
 game/DieTest.class

@@ -3,7 +3,7 @@ package player;
 import game.Board;
 import game.Die;
 import game.Piece;
-import game.square.GoSquare;
+import game.square.*;
 
 import org.junit.jupiter.api.Test;
 
