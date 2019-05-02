@@ -14,19 +14,6 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class PlayerTest {
 
-    Board b = new Board();
-    Piece p = new Piece("Dog", new GoSquare("Go", 0));
-    Die d = new Die();
-
-    Player p1 = new Player(b,p,d, 1500);
-    Player p2 = new Player(b,p,d, 1500);
-
-    @Test
-    public void itShouldbePlayer2(){
-
-        assertEquals(p2.getName(), ("Player2"));
-    }
-
     //Enables Mock annotations
     @Before
     public void init() {
