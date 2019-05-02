@@ -11,4 +11,7 @@ public class MonopolyGameTest {
 
         assertThrows(IllegalArgumentException.class, () -> new MonopolyGame(9));
     }
+
+
+
 }
