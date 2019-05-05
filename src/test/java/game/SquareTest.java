@@ -27,4 +27,5 @@ public class SquareTest {
 
         assertNotSame(b.getSquare(1), b.getSquare(2));
     }
+
 }

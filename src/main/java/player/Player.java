@@ -45,6 +45,10 @@ public class Player {
         }
     }
 
+    public int getMoney(){
+        return money;
+    }
+
     public String getName(){
         return name;
     }
