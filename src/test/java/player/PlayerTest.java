@@ -6,16 +6,23 @@ import game.Piece;
 import game.square.*;
 
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.mockito.Mock;
 import org.mockito.Mockito;
+import org.mockito.MockitoAnnotations;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 public class PlayerTest {
 
-    @BeforeAll
-    static void displayTestDescription(){
-        System.out.println("We'll test Player's behaviour");
+    @Mock
+    Die die;  //mocked dice
+
+    @BeforeEach
+    public void init() {
+        //enables Mockito annotations
+        MockitoAnnotations.initMocks(this);
     }
 
     @Test
@@ -28,8 +35,8 @@ public class PlayerTest {
         Board board = new Board();
         Square startingSquare = board.getStartingSquare();
         Piece piece = new Piece("hat", startingSquare);
-        //Create a mock version of die that always return 1
-        Die die = Mockito.mock(Die.class);  //mock version of die
+
+        //Create set the mocked dice so that it always return 1
         Mockito.when(die.getFaceValue()).thenReturn(1); //inject a different behaviour
         int money = 2001;
         Player player = new Player(board, piece, die, money);
