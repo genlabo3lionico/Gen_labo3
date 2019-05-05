@@ -5,11 +5,9 @@ import game.Die;
 import game.Piece;
 import game.square.*;
 
-import org.junit.Before;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
-import org.mockito.MockitoAnnotations;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -74,9 +72,5 @@ public class PlayerTest {
         assertSame(piece.getLocation(),board.getStartingSquare());
         //player should have earned 200
         assert(player.getMoney() == 2001);
-
     }
-
-
-
 }
