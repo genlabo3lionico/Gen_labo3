@@ -24,8 +24,6 @@ public class SquareTest {
     public void ItDontShouldBeTheSameRegularSquare(){
 
         Board b = new Board();
-
         assertNotSame(b.getSquare(1), b.getSquare(2));
     }
-
 }
